@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Mail\myTestmail;
 use Illuminate\Support\Facades\Mail;
@@ -15,3 +15,8 @@ Route::get('/home', function () {
     return view('welcome');
 });
     
+// Route::get('login', function(){
+//     return view('login');
+// });
+
+ Route::get('slogin',[ApiController::class,'sociallogin']);

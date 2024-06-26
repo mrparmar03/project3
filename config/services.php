@@ -35,4 +35,23 @@ return [
         ],
     ],
 
+
+    'github' => [
+    'client_id' => env('GITHUB_CLIENT_ID'),
+    'client_secret' => env('GITHUB_CLIENT_SECRET'),
+    'redirect' => 'auth/github/callback',
+],
+
+'google' => [
+    'client_id' => env('GOOGLE_CLIENT_ID'),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+    'redirect' => 'http://127.0.0.1:8000/auth/google/call-back',
+],
+
+
+'facebook' => [
+    'client_id' => env('FACEBOOK_CLIENT_ID'),
+    'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+    'redirect' => 'http://127.0.0.1:8000/auth/facebook/call-back',
+],
 ];

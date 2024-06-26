@@ -25,6 +25,10 @@ class User extends Authenticatable
         'mobile',
     ];
 
+    public function linkedSocialAccounts()
+{
+    return $this->hasOne(LinkedSocialAccount::class);
+}
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -48,3 +52,5 @@ class User extends Authenticatable
         ];
     }
 }
+
+
